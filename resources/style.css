@@ -1,0 +1,438 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#app {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+#app .page {
+	display: none;
+	overflow: hidden;
+}
+#app .page.in,#app .page.out {
+display: block;
+}
+#app .page.in {
+	animation: in-end .1s linear .2s;
+}
+#app .page.out {
+	animation: out-end .1s linear .2s;
+}
+.page, .page .layer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+#index.out {
+	animation: 	fade-out .5s forwards .2s,
+				out-end .1s linear 1.2s;
+}
+#index .layer.top {
+	z-index: 9;
+}
+.page .layer>div {
+	width: 100%;
+	height: 100%;
+	background-size:100% auto;
+}
+#index {
+	background: white url("bkg-pt.svg");
+	background-size: .3rem .3rem;
+}
+#index.in {
+	animation: in-end .1s linear 2.2s;
+}
+#index.in #index_layer1 {
+	animation: fade-in 1s backwards .4s;
+}
+#index.in #index_layer2 {
+	animation: fade-in 1s backwards .2s;
+}
+#index.in #index_layer3 {
+	animation: fade-in 1s backwards .4s;
+}
+#index.in #index_layer4 {
+	animation: fade-in 1s backwards .6s;
+}
+#index.in #index_layer5 {
+	animation: fade-in 1s backwards 1.2s;
+}
+#index_layer1 {
+	background: transparent url("index-1.svg") no-repeat bottom center;
+}
+#index_layer2 {
+	background: transparent url("index-2.svg") no-repeat bottom center;
+}
+#index_layer3 {
+	background: transparent url("index-3.svg") no-repeat bottom center;
+}
+#index_layer4 {
+	background: transparent url("index-4.svg") no-repeat bottom center;
+}
+#index_layer5 {
+	background: transparent url("index-5.svg") no-repeat bottom center;
+}
+#index_layer5 .link {
+	display: block;
+	position: absolute;
+	bottom: 9%;
+	left: 7%;
+	right: 7%;
+	height: 7%;
+	background: transparent;
+}
+#index_layer5 .link:active {
+	background: rgba(255,255,255, 0.1);
+}
+#app .question .answers {
+	text-align: left;
+	padding: 0 7%;
+	margin-top: -.2rem;
+}
+#app .question .answers ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: #666;
+	font-size: .2rem;
+}
+#app .question .answers ul li {
+	margin-bottom: .1rem;
+}
+#app .question.in .answers ul li:nth-child(1) {
+	animation: slide-in .6s ease-out 0s backwards;
+}
+#app .question.in .answers ul li:nth-child(2) {
+	animation: slide-in .6s ease-out .2s backwards;
+}
+#app .question.in .next-btn {
+	animation: slide-in .4s ease-out .6s backwards;
+}
+#app .question.out .answers ul li:nth-child(1) {
+	animation: slide-out .6s ease-out 0s forwards;
+}
+#app .question.out .answers ul li:nth-child(2) {
+	animation: slide-out .6s ease-out .2s forwards;
+}
+#app .question.out .next-btn {
+	animation: slide-out .4s ease-out .6s forwards;
+}
+#app .question .answers ul li input {
+	display: none;
+}
+#app .question .answers ul li input:checked + span.text {
+	color: #0071DB;
+}
+#app .question .answers ul li input:checked + span.text {
+	border-color: #3C94E4;
+}
+#app .question .answers ul li span.text {
+	display: block;
+	position: relative;
+	z-index: 1;
+	background: white;
+	padding: .14rem .1rem;
+	border: .02rem solid #ddd;
+	overflow: hidden;
+
+}
+/*#app .question .answers ul li span.text:before,*/
+#app .question .answers ul li span.text:after {
+	position: absolute;
+	z-index: 0;
+	left: -.3rem;
+	margin-top: -.5rem;
+	top: 50%;
+	display: block;
+	content: ' ';
+	width: .6rem;
+	height: .6rem;
+	background: rgba(0,0,0,0.05);
+	border-radius: .5rem;
+
+	animation: scale-in .3s ease-out backwards;
+}
+#app .question .answers ul li span.text:after {
+	background: rgba(60,148,228, 0.1);
+	animation: scale-out .2s ease-in forwards;
+}
+/*#app .question .answers ul li input:checked + span.text:before {
+	animation: scale-out .2s ease-in forwards;
+}*/
+#app .question .answers ul li input:checked + span.text:after {
+	animation: scale-in .4s ease-out backwards;
+}
+
+#app .question .next-btn {
+	position: relative;
+	display: block;
+	width: 100%;
+	border: 0;
+	background: url('next.svg') no-repeat bottom center;
+	background-size: 100% auto;
+	height: .6rem;
+	margin-top: .2rem;
+	outline: none;
+}
+#app .question .next-btn:disabled {
+	background-image: url('next-disabled.svg');
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		display: block;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+@keyframes in-end {
+	from {
+		opacity: 0.99;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes out-end {
+	from {
+		opacity: 0.99;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes slide-in {
+	from {
+		transform: translateY(.4rem);
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+@keyframes slide-out {
+	from {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-.4rem);
+		opacity: 0;
+	}
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		display: none;
+	}
+}
+@keyframes scale-in {
+	0% {
+		transform: scale(0,0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1,1);
+		opacity: 1;
+	}
+}
+@keyframes scale-out {
+	100% {
+		transform: scale(0,0);
+		opacity: 0;
+	}
+	0% {
+		transform: scale(1,1);
+		opacity: 1;
+	}
+}
+#app #analyze.in, #app #analyze.out {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#analyze p {
+	color: #333;
+	font-size: .2rem;
+	position: relative;
+	z-index: 1;
+}
+#app #analyze.in p {
+	animation: slide-in .4s ease-in forwards;
+}
+#app #analyze.out p {
+	animation: slide-out .4s ease-out forwards;
+}
+#analyze .stage {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 100%;
+	z-index: 0;
+}
+#analyze .stage .ball {
+	position: absolute;
+	background: red;
+	width: .1rem;
+	height: .1rem;
+	border-radius: .05rem;
+	left: 50%;
+	top: 50%;
+}
+#app #result {
+	background: #333;
+}
+#app #result.in {
+	animation: fade-in .4s ease-in backwards;
+}
+#app #result.in #result_layer1 {
+	animation: slide-in .4s ease-out backwards 0s;
+}
+#app #result.in #result_layer2 {
+	animation: slide-in .4s ease-out backwards .2s;
+}
+#app #result.in #result_layer3 {
+	animation: slide-in .4s ease-out backwards .4s;
+}
+#app #result.in #result_layer4 {
+	animation: slide-in .4s ease-out backwards .8s;
+}
+#result_layer1 {
+	background: transparent url("result/layer1.svg") no-repeat bottom center;
+}
+#result_layer2 {
+	background: transparent url("result/layer2.svg") no-repeat bottom center;
+}
+#result_layer3 {
+	background: transparent url("result/layer3.svg") no-repeat bottom center;
+}
+#result_layer4 {
+	background: transparent url("result/layer4.svg") no-repeat bottom center;
+}
+#result_form {
+	background: transparent url("result/form.svg") no-repeat bottom center;
+}
+#result .container .content {
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	right: 10%;
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	align-items: center;
+	font-size: .25rem;
+	z-index: 9;
+}
+#result .container .content .item {
+	width: .8rem;
+	height: .8rem;
+	margin: .02rem;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+
+}
+#result.in .container .content .item {
+	animation: scale-in .6s ease-in backwards 2.0s;
+}
+#result.in .layer.circle1 {
+	animation: slide-in .4s ease-in backwards 1.2s;
+}
+#result.in .layer.circle2 {
+	animation: slide-in .4s ease-in backwards .9s;
+}
+#result.in .layer.circle3 {
+	animation: slide-in .4s ease-in backwards .7s;
+}
+#result.in .layer.circle4 {
+	animation: scale-in .8s ease-in backwards .4s;
+}
+#result.in .form {
+	animation: slide-in .6s ease-in backwards 2.6s,
+				in-end .1s linear 3.2s;
+}
+#result .container .content .item.big {
+	width: 1rem;
+	height: 1rem;
+}
+#result .content .item.design {
+	background-image: url('result/icons/design.png');
+}
+#result .content .item.office {
+	background-image: url('result/icons/office.png');
+}
+#result .content .item.operate {
+	background-image: url('result/icons/operate.png');
+}
+#result .content .item.develope {
+	background-image: url('result/icons/develope.png');
+}
+#result .content .item.maintain {
+	background-image: url('result/icons/maintain.png');
+}
+#result .content .item.pm {
+	background-image: url('result/icons/pm.png');
+}
+#result a.link {
+	display: block;
+	position: absolute;
+}
+#result a.link:active {
+	background-color: rgba(255,255,255,0.2);
+}
+#result a.link.joinus {
+	left: 10%;
+	right: 10%;
+	bottom: 15%;
+	height: 7%;
+}
+#result a.link.restart {
+	right: calc(50% - .1rem);
+	width: 1.3rem;
+	bottom: 9%;
+	height: 5%;
+}
+#result a.link.share {
+	left: calc(50% + .2rem);
+	width: 1rem;
+	bottom: 9%;
+	height: 5%;
+}
+#result .share-mask {
+	background: rgba(0,0,0,0.4);
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+#result_share {
+	width: 100%;
+	height: 100%;
+	background: url('share.svg') no-repeat top right;
+}
