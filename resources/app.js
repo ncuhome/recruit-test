@@ -76,14 +76,14 @@ analyzePage.addEventListener("enterEnd", function () {
 	text = "";
 
 	for (var i = 0; i < options.length; i++) {
-		if (options[i] > 9) {
+		if (options[i] > 10) {
 			$("#resultBox").append('<div class="item biger ' + keys[i] + '"></div>')
 			text += titles[i] + '、';
-		} else if ((options[i] <= 9) && (options[i] > 6)) {
+		} else if ((options[i] <= 10) && (options[i] > 6)) {
 			$("#resultBox").append('<div class="item big ' + keys[i] + '"></div>')
 			text += titles[i] + '、';
 		} else if ((options[i] <= 6) && (options[i] > 4)) {
-			$("#resultBox").append('<div class="item ' + keys[i] + '"></div>')
+			$("#resultBox").append('<div class="item small' + keys[i] + '"></div>')
 		}
 	}
 

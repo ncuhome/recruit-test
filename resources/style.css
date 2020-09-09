@@ -350,9 +350,9 @@ display: block;
 	z-index: 9;
 }
 #result .container .content .item {
-	width: .75rem;
-	height: .75rem;
-	margin: .025rem;
+	width: .8rem;
+	height: .8rem;
+	margin: .023rem;
 	background: transparent no-repeat center center;
 	background-size: 100% 100%;
 
@@ -376,9 +376,13 @@ display: block;
 	animation: slide-in .6s ease-in backwards 2.6s,
 				in-end .1s linear 3.2s;
 }
+#result .container .content .item.small {
+	width: 0.7rem;
+	height: 0.7rem;
+}
 #result .container .content .item.big {
-	width: 0.95rem;
-	height: 0.95rem;
+	width: 0.9rem;
+	height: 0.9rem;
 }
 #result .container .content .item.biger {
 	width: 1.12rem;
