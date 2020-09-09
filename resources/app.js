@@ -58,27 +58,16 @@ analyzePage.addEventListener("enterEnd", function () {
 
 	var titles = ['设计', '产品', '运营', '研发', '行政'];
 	var keys = ['design', 'pm', 'operate', 'develope', 'office'];
-	var options = [0, 1, 3, 2, 0];
-	log([1, 1, 1] + [1, 2, 3])
+	var options = [0, 0, 0, 0, 0];
 
 	for (var i = 0, j = 0; i < dispatcher.pages.length; i++) {
 		if (dispatcher.pages[i] instanceof QuestionPage) {
 			var result = dispatcher.pages[i].result().split(',');
-			if (i in [0, 1]) {
-				options[0] += parseInt(result[0])
-			}
-			if (i in [2, 3]) {
-				options[1] += parseInt(result[1])
-			}
-			if (i in [4, 5]) {
-				options[2] += parseInt(result[2])
-			}
-			if (i in [6, 7, 8, 9]) {
-				options[3] += parseInt(result[3])
-			}
-			if (i in [10, 11]) {
-				options[4] += parseInt(result[4])
-			}
+			options[0] += parseInt(result[0])
+			options[1] += parseInt(result[1])
+			options[2] += parseInt(result[2])
+			options[3] += parseInt(result[3])
+			options[4] += parseInt(result[4])
 			j++;
 		}
 	}
@@ -93,7 +82,7 @@ analyzePage.addEventListener("enterEnd", function () {
 		} else if ((options[i] <= 9) && (options[i] > 6)) {
 			$("#resultBox").append('<div class="item big ' + keys[i] + '"></div>')
 			text += titles[i] + '、';
-		} else if ((options[i] <= 6) && (options[i] > 3)) {
+		} else if ((options[i] <= 6) && (options[i] > 4)) {
 			$("#resultBox").append('<div class="item ' + keys[i] + '"></div>')
 		}
 	}
