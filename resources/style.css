@@ -377,8 +377,12 @@ display: block;
 				in-end .1s linear 3.2s;
 }
 #result .container .content .item.small {
-	width: 0.7rem;
-	height: 0.7rem;
+	width: 0.45rem;
+	height: 0.45rem;
+}
+#result .container .content .item.small {
+	width: 0.6rem;
+	height: 0.6rem;
 }
 #result .container .content .item.big {
 	width: 0.9rem;
