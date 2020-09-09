@@ -350,9 +350,9 @@ display: block;
 	z-index: 9;
 }
 #result .container .content .item {
-	width: .8rem;
-	height: .8rem;
-	margin: .02rem;
+	width: .75rem;
+	height: .75rem;
+	margin: .025rem;
 	background: transparent no-repeat center center;
 	background-size: 100% 100%;
 
@@ -377,8 +377,12 @@ display: block;
 				in-end .1s linear 3.2s;
 }
 #result .container .content .item.big {
-	width: 1rem;
-	height: 1rem;
+	width: 0.95rem;
+	height: 0.95rem;
+}
+#result .container .content .item.biger {
+	width: 1.12rem;
+	height: 1.12rem;
 }
 #result .content .item.design {
 	background-image: url('result/icons/design.png');
