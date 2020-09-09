@@ -86,7 +86,7 @@ analyzePage.addEventListener("enterEnd", function () {
 			$("#resultBox").append('<div class="item big ' + keys[i] + '"></div>')
 			text += titles[i] + '、';
 		} else if ((options[i] <= 8) && (options[i] > 5)) {
-			$("#resultBox").append('<div class="item small' + keys[i] + '"></div>')
+			$("#resultBox").append('<div class="item smaller' + keys[i] + '"></div>')
 		}
 	}
 
