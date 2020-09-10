@@ -376,7 +376,7 @@ display: block;
 	animation: slide-in .6s ease-in backwards 2.6s,
 				in-end .1s linear 3.2s;
 }
-#result .container .content .item.small {
+#result .container .content .item.smaller {
 	width: 0.45rem;
 	height: 0.45rem;
 }

@@ -3,8 +3,8 @@ import random
 import numpy
 ans = ['设计', '产品', '运营', '研发', '行政']
 
-t1 = [[4, 0, 2, 0, 0], [0, 2, 0, 1, 0]]
-t2 = [[5, 1, 2, 0, 0], [0, 0, 0, 0, 0]]
+t1 = [[4, 0, 2, 0, 0], [1, 2, 0, 1, 1]]
+t2 = [[6, 1, 2, 0, 0], [0, 0, 0, 0, 0]]
 t3 = [[1, 3, 0, 1, 0], [1, 0, 0, 0, 1]]
 t4 = [[0, 2, 1, 1, 2], [1, 1, 1, 0, 0]]
 t5 = [[1, 0, 0, 0, 0], [1, 2, 4, 2, 2]]
@@ -29,7 +29,7 @@ def test_random_data():
             this_exam += this_count
         init_count += this_exam
         all_exam.append(this_exam)
-        # print(this_exam)
+        print(this_exam)
 
     print(init_count)
 

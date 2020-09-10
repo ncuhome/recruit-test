@@ -79,13 +79,13 @@ analyzePage.addEventListener("enterEnd", function () {
 		if (options[i] > 14) {
 			$("#resultBox").append('<div class="item biger ' + keys[i] + '"></div>')
 			text += titles[i] + '、';
-		} else if ((options[i] <= 14) && (options[i] > 11)) {
+		} else if ((options[i] <= 14) && (options[i] > 12)) {
 			$("#resultBox").append('<div class="item big ' + keys[i] + '"></div>')
 			text += titles[i] + '、';
-		} else if ((options[i] <= 11) && (options[i] > 8)) {
+		} else if ((options[i] <= 12) && (options[i] > 10)) {
 			$("#resultBox").append('<div class="item small ' + keys[i] + '"></div>')
 			text += titles[i] + '、';
-		} else if ((options[i] <= 8) && (options[i] > 6)) {
+		} else if ((options[i] <= 9) && (options[i] > 6)) {
 			$("#resultBox").append('<div class="item smaller' + keys[i] + '"></div>')
 		}
 	}
