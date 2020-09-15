@@ -49,6 +49,7 @@ dispatcher.pages[0].addEventListener("exitEnd", parallaxEnd);
 var resultPage = dispatcher.queryPage('result');
 resultPage.addEventListener("enterStart", parallaxStart);
 resultPage.addEventListener("exitEnd", parallaxEnd);
+console.log(resultPage);
 
 var analyzePage = dispatcher.queryPage('analyze');
 analyzePage.addEventListener("enterEnd", function () {

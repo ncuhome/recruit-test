@@ -30,6 +30,10 @@ display: block;
 #app .page.out {
 	animation: out-end .1s linear .2s;
 }
+#app .anim {
+	min-width: 100vw;
+  min-height: calc(100vw / 1080 * 1200);
+}
 .page, .page .layer {
 	position: absolute;
 	left: 0;
