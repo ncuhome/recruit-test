@@ -417,8 +417,8 @@ body {
 #result .container .content {
 	position       : absolute;
 	top            : 45%;
-	left           : 10%;
-	right          : 10%;
+	left           : 0%;
+	right          : 0%;
 	width          : auto;
 	height         : auto;
 	display        : flex;
