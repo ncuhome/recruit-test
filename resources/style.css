@@ -495,16 +495,16 @@ body {
 	background-image: url('result/icons/operate.png');
 }
 
-#result .content .item.develope {
-	background-image: url('result/icons/develope.png');
-}
-
-#result .content .item.maintain {
-	background-image: url('result/icons/maintain.png');
+#result .content .item.developer {
+	background-image: url('result/icons/developer.png');
 }
 
 #result .content .item.pm {
 	background-image: url('result/icons/pm.png');
+}
+
+#result .content .item.game {
+	background-image: url("result/icons/game.png");
 }
 
 #result a.link {
