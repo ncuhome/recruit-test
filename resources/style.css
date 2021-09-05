@@ -484,27 +484,27 @@ body {
 }
 
 #result .content .item.design {
-	background-image: url('result/icons/design.png');
+	background-image: url('result/icons/design.svg');
 }
 
 #result .content .item.office {
-	background-image: url('result/icons/office.png');
+	background-image: url('result/icons/office.svg');
 }
 
 #result .content .item.operate {
-	background-image: url('result/icons/operate.png');
+	background-image: url('result/icons/operate.svg');
 }
 
 #result .content .item.developer {
-	background-image: url('result/icons/developer.png');
+	background-image: url('result/icons/developer.svg');
 }
 
 #result .content .item.pm {
-	background-image: url('result/icons/pm.png');
+	background-image: url('result/icons/pm.svg');
 }
 
 #result .content .item.game {
-	background-image: url("result/icons/game.png");
+	background-image: url("result/icons/game.svg");
 }
 
 #result a.link {
