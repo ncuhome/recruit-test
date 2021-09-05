@@ -41,6 +41,7 @@ Page.prototype.removeEventListener = function(name) {
 
 Page.prototype.trigger = function(name) {
 	log(name);
+	log(this._event)
 	for(var i = 0; i < this._event[name].length; i++) {
 		this._event[name][i].apply(this, [].slice.call(arguments, 1));
 	}

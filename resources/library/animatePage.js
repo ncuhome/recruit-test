@@ -13,7 +13,7 @@ AnimatePage.prototype.loadAnimate = function () {
 		renderer: 'svg',
 		loop: true,
 		prerender: true,
-		autoplay: false,
+		autoplay:true,
 		autoloadSegments: false,
 		path: path
 	});
@@ -31,7 +31,7 @@ AnimatePage.prototype.exit = function () {
 	this.element.classList.add("out");
 	this.element.classList.remove("in");
 
-	log(this.loop[1], this.anim.timeCompleted);
+	log(this.loop[1], this.anim.timeCompleted,this.anim);
 	this.anim.adjustSegment([this.loop[1], this.anim.timeCompleted]);
 
 	var that = this;
@@ -41,7 +41,6 @@ AnimatePage.prototype.exit = function () {
 			that.trigger("exitEnd");
 		}
 	}, (this.anim.timeCompleted - this.loop[1]) / 30 * 1000); //Issue: 页面有时无法退出
-
 	this.anim.addEventListener("loopComplete", function (evt) {
 		if (that.anim.firstFrame >= that.loop[1]) { //处在结尾段
 			that.element.classList.remove("out");
