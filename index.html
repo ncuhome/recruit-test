@@ -2,298 +2,361 @@
 <html lang="zh-cn">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>家园工作室招新小测试</title>
-	<meta id="description" name="description" itemprop="description" content="分享给你一个超好玩的家园工作室招新小测验喔~">
-	<meta name="share-icon" content="/resources/banner.png">
-	<meta itemprop="image" content="/resources/banner.png" />
-	<meta name="name" itemprop="name" content="家园工作室招新小测试" />
-	<link rel="stylesheet" href="resources/style.css">
-	<link rel="shortcut icon" href="/resources/icon.png" />
-	<script src="resources/parallax.js"></script>
-	<script src="resources/bodymovin.js"></script>
-	<script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js"></script> -->
-	<script src="resources/library/core.js"></script>
-	<script src="resources/library/page.js"></script>
-	<script src="resources/library/animatePage.js"></script>
-	<script src="resources/library/questionPage.js"></script>
-	<script src="resources/library/particle.js"></script>
-	<script src="resources/library/analyzePage.js"></script>
-	<script src="resources/library/dispatcher.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>家园工作室招新小测试</title>
+  <meta id="description" name="description" itemprop="description" content="分享给你一个超好玩的家园工作室招新小测验喔~" />
+  <meta name="share-icon" content="/resources/banner.png" />
+  <meta itemprop="image" content="/resources/banner.png" />
+  <meta name="name" itemprop="name" content="家园工作室招新小测试" />
+  <link rel="stylesheet" href="resources/style.css" />
+  <link rel="shortcut icon" href="/resources/icon.png" />
+  <script src="resources/parallax.js"></script>
+  <script src="resources/bodymovin.js"></script>
+  <script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js"></script> -->
+  <script src="resources/library/core.js"></script>
+  <script src="resources/library/page.js"></script>
+  <script src="resources/library/animatePage.js"></script>
+  <script src="resources/library/questionPage.js"></script>
+  <script src="resources/library/particle.js"></script>
+  <script src="resources/library/analyzePage.js"></script>
+  <script src="resources/library/dispatcher.js"></script>
 </head>
 
 <body>
-	<div id="app">
-		<div class="page" id="index" data-pointer-events="true">
-			<div class="layer" data-depth="0.80"></div>
-			<div class="layer" data-depth="0.80">
-				<div id="index_layer1"></div>
-			</div>
-			<div class="layer" data-depth="0.70">
-				<div id="index_layer2"></div>
-			</div>
-			<div class="layer" data-depth="0.60">
-				<div id="index_layer3"></div>
-			</div>
-			<div class="layer" data-depth="0.20">
-				<div id="index_layer4"></div>
-			</div>
-			<div class="layer top" data-depth="0.10">
-				<div id="index_layer5">
-					<a href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="link"></a>
-				</div>
-			</div>
-		</div>
-		<div class="page question bm" id="stage1" data-anim="resources/stage1/data.json" data-loop="67,185">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage1" value="4,0,2,0,0"><span
-								class="text">是的呢，喜欢关注丰富多彩的东西~</span></label>
-					</li>
-					<li><label><input type="radio" name="stage1" value="1,2,0,1,1"><span
-								class="text">不太注意诶，我更关注事物的本质</span></label></li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage2" data-anim="resources/stage2/data.json" data-loop="132,193">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage2" value="6,0,2,0,0"><span
-								class="text">画画…涂鸦…照片…都是生活的日常~</span></label></li>
-					<li><label><input type="radio" name="stage2" value="0,0,0,0,0"><span class="text">不太会这些</span></label></li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage3" data-anim="resources/stage3/data.json" data-loop="40,210">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage3" value="2,3,0,1,0"><span
-								class="text">哇，喜欢，手机里塞满各式App</span></label></li>
-					<li><label><input type="radio" name="stage3" value="1,0,0,0,1"><span
-								class="text">还好，一般只用常用的App~</span></label></li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage4" data-anim="resources/stage4/data.json" data-loop="291,310">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage4" value="0,2,1,1,2"><span
-								class="text">是的，遇到问题想清楚怎么处理~</span></label></li>
-					<li><label><input type="radio" name="stage4" value="1,1,1,0,0"><span class="text">做事情随心一些也挺好的呀~</span></label>
-					</li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage5" data-anim="resources/stage5/data.json" data-loop="110,210">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage5" value="1,0,0,0,0"><span class="text">不太喜欢写东西</span></label>
-					</li>
-					<li><label><input type="radio" name="stage5" value="1,2,4,2,2"><span
-								class="text">喜欢阅读，琢磨文字，胡思乱想。</span></label></li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage6" data-anim="resources/stage6/data.json" data-loop="211,243">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage6" value="1,0,5,1,1"><span class="text">哈哈是的，习惯了追时事热点</span></label>
-					</li>
-					<li><label><input type="radio" name="stage6" value="0,1,1,0,1"><span
-								class="text">上网时间比较少，有时候不知道别人在聊什么梗诶</span></label></li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage7" data-anim="resources/stage7/data.json" data-loop="47,209">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage7" value="1,0,1,0,2"><span class="text">没有诶…听起来好厉害</span></label>
-					</li>
-					<li><label><input type="radio" name="stage7" value="0,0,0,3,0"><span class="text">干过喔，蛮有意思的</span></label>
-					</li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage8" data-anim="resources/stage8/data.json" data-loop="92,195">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage8" value="0,1,0,3,0"><span class="text">哇，说的就是我呀</span></label>
-					</li>
-					<li><label><input type="radio" name="stage8" value="0,3,0,1,1"><span class="text">喜欢专研原理，但不太懂技术</span></label>
-					</li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage9" data-anim="resources/stage9/data.json" data-loop="52,205">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage9" value="1,1,1,0,1"><span class="text">对这方面不是很有兴趣诶…</span></label>
-					</li>
-					<li><label><input type="radio" name="stage9" value="0,2,0,3,0"><span
-								class="text">我是电子产品界的弄潮儿，新出的产品我都知道~</span></label></li>
+  <div id="app">
+    <div class="page" id="index" data-pointer-events="true">
+      <div class="layer" data-depth="0.80"></div>
+      <div class="layer" data-depth="0.80">
+        <div id="index_layer1"></div>
+      </div>
+      <div class="layer" data-depth="0.70">
+        <div id="index_layer2"></div>
+      </div>
+      <div class="layer" data-depth="0.60">
+        <div id="index_layer3"></div>
+      </div>
+      <div class="layer" data-depth="0.20">
+        <div id="index_layer4"></div>
+      </div>
+      <div class="layer top" data-depth="0.10">
+        <div id="index_layer5">
+          <a href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="link"></a>
+        </div>
+      </div>
+    </div>
+    <div class="page question bm" id="stage1" data-anim="resources/stage1/data.json" data-loop="67,185">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage1" value="4,0,2,0,0,1" /><span
+                class="text">是的呢，喜欢关注丰富多彩的东西~</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage1" value="1,2,0,1,1,1" /><span
+                class="text">不太注意诶，我更关注事物的本质</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage2" data-anim="resources/stage2/data.json" data-loop="132,193">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage2" value="6,0,2,0,0,0" /><span
+                class="text">画画…涂鸦…照片…都是生活的日常~</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage2" value="0,0,0,0,0,0" /><span class="text">不太会这些</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage3" data-anim="resources/stage3/data.json" data-loop="40,210">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage3" value="2,4,0,1,0,3" /><span
+                class="text">哇，喜欢，手机里塞满各式App</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage3" value="1,0,0,0,1,0" /><span
+                class="text">还好，一般只用常用的App~</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage4" data-anim="resources/stage4/data.json" data-loop="291,310">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage4" value="0,2,1,1,2,2" /><span
+                class="text">是的，遇到问题想清楚怎么处理~</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage4" value="1,1,1,0,0,0" /><span
+                class="text">做事情随心一些也挺好的呀~</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage5" data-anim="resources/stage5/data.json" data-loop="110,210">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage5" value="1,0,0,0,0,0" /><span class="text">不太喜欢写东西</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage5" value="1,2,4,2,2,2" /><span
+                class="text">喜欢阅读，琢磨文字，胡思乱想。</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage6" data-anim="resources/stage6/data.json" data-loop="211,243">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage6" value="1,0,5,1,1,1" /><span
+                class="text">哈哈是的，习惯了追时事热点</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage6" value="0,1,1,0,1,0" /><span
+                class="text">上网时间比较少，有时候不知道别人在聊什么梗诶</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage7" data-anim="resources/stage7/data.json" data-loop="47,209">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage7" value="1,0,1,0,2,0" /><span class="text">没有诶…听起来好厉害</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage7" value="0,0,0,3,0,2" /><span class="text">干过喔，蛮有意思的</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage8" data-anim="resources/stage8/data.json" data-loop="92,195">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage8" value="0,1,0,3,0,2" /><span class="text">哇，说的就是我呀</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage8" value="0,3,0,1,1,1" /><span
+                class="text">喜欢专研原理，但不太懂技术</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage9" data-anim="resources/stage9/data.json" data-loop="52,205">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage9" value="1,1,1,0,1,0" /><span
+                class="text">对这方面不是很有兴趣诶…</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage9" value="0,2,0,3,0,1" /><span
+                class="text">我是电子产品界的弄潮儿，新出的产品我都知道~</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage10" data-anim="resources/stage10/data.json" data-loop="165,197">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage10" value="0,0,0,3,0,2" /><span
+                class="text">了解，知道操作系统和软件的关系</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage10" value="0,0,0,0,0,0" /><span
+                class="text">听过，但是不知道是什么</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage11" data-anim="resources/stage11/data.json" data-loop="25,82">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage11" value="0,2,1,0,4,2" /><span
+                class="text">擅长沟通，希望掌握所有事情的进度</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage11" value="1,1,0,1,2,0" /><span
+                class="text">一般自己做自己感兴趣的事情~</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page question bm" id="stage12" data-anim="resources/stage12/data.json" data-loop="28,106">
+      <div class="anim"></div>
+      <div class="answers">
+        <ul>
+          <li>
+            <label><input type="radio" name="stage12" value="1,0,1,0,1,0" /><span
+                class="text">做好自己，不太喜欢管群体的事情~</span></label>
+          </li>
+          <li>
+            <label><input type="radio" name="stage12" value="0,1,0,0,5,2" /><span
+                class="text">可以分清轻重缓急，大小事务安排得井井有条</span></label>
+          </li>
+        </ul>
+      </div>
+      <div class="next">
+        <button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
+      </div>
+    </div>
+    <div class="page analyze" id="analyze">
+      <canvas class="stage"></canvas>
+      <p>分析中...</p>
+    </div>
+    <div class="page result" id="result" data-pointer-events="true">
+      <div class="layer" data-depth="1.00"></div>
+      <div class="layer" data-depth="0.70">
+        <div id="result_layer1"></div>
+      </div>
+      <div class="layer" data-depth="0.60">
+        <div id="result_layer2"></div>
+      </div>
+      <div class="layer" data-depth="0.45">
+        <div id="result_layer3"></div>
+      </div>
+      <div class="layer" data-depth="0.40">
+        <div id="result_layer4"></div>
+      </div>
+      <div class="layer circle1" data-depth="0.35">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="overflow: visible"
+          viewBox="0 0 1080 1920">
+          <circle style="fill: #ffd880; opacity: 0.1" cx="540" cy="2024" r="1428" />
+        </svg>
+      </div>
+      <div class="layer circle2" data-depth="0.30">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="overflow: visible"
+          viewBox="0 0 1080 1920">
+          <circle style="fill: #ffd880; opacity: 0.2" cx="540" cy="2024" r="1381" />
+        </svg>
+      </div>
+      <div class="layer circle3" data-depth="0.25">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="overflow: visible"
+          viewBox="0 0 1080 1920">
+          <circle style="fill: #ffd880; opacity: 0.3" cx="540" cy="2024" r="1327" />
+        </svg>
+      </div>
+      <div class="layer circle4" data-depth="0.20">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="overflow: visible"
+          viewBox="0 0 1080 1920">
+          <radialGradient id="circleGrad" cx="540" cy="2024" r="1428.09" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ffc95c" />
+            <stop offset="1" stop-color="#ffd880" />
+          </radialGradient>
+          <circle style="fill: url(#circleGrad)" cx="540" cy="2024" r="1269" />
+        </svg>
+      </div>
+      <div class="layer container" data-depth="0.10">
+        <div class="content" id="resultBox"></div>
+        <!-- <div id="result_form">
+          <a href="http://2021hr.ncuos.com/" class="link joinus"></a>
+          <a href="javascript:;" onclick="javascript:location.reload();" class="link restart"></a>
+          <a href="javascript:share();" class="link share"></a>
+        </div> -->
+      </div>
+      <div class="layer form" data-depth="0.10">
+          <div id="result_form">
+            <a
+              href="http://2021hr.ncuos.com/"
+              class="link joinus"
+            ></a>
+            <a
+              href="javascript:;"
+              onclick="javascript:location.reload();"
+              class="link restart"
+            ></a>
+            <a href="javascript:share();" class="link share"></a>
+          </div>
+        </div>
+      <div class="share-mask">
+        <div id="result_share"></div>
+      </div>
+    </div>
+  </div>
 
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage10" data-anim="resources/stage10/data.json" data-loop="165,197">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage10" value="0,0,0,3,0"><span
-								class="text">了解，知道操作系统和软件的关系</span></label>
-					</li>
-					<li><label><input type="radio" name="stage10" value="0,0,0,0,0"><span class="text">听过，但是不知道是什么</span></label>
-					</li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage11" data-anim="resources/stage11/data.json" data-loop="25,82">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage11" value="0,2,1,0,4"><span
-								class="text">擅长沟通，希望掌握所有事情的进度</span></label></li>
-					<li><label><input type="radio" name="stage11" value="1,1,0,1,2"><span
-								class="text">一般自己做自己感兴趣的事情~</span></label></li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page question bm" id="stage12" data-anim="resources/stage12/data.json" data-loop="28,106">
-			<div class="anim"></div>
-			<div class="answers">
-				<ul>
-					<li><label><input type="radio" name="stage12" value="1,0,1,0,1"><span
-								class="text">做好自己，不太喜欢管群体的事情~</span></label></li>
-					<li><label><input type="radio" name="stage12" value="0,1,0,0,5"><span
-								class="text">可以分清轻重缓急，大小事务安排得井井有条</span></label></li>
-				</ul>
-			</div>
-			<div class="next">
-				<button href="javascript:;" onclick="javascript:dispatcher.nextPage();" class="next-btn"></button>
-			</div>
-		</div>
-		<div class="page analyze" id="analyze">
-			<canvas class="stage"></canvas>
-			<p>分析中...</p>
-		</div>
-		<div class="page result" id="result" data-pointer-events="true">
-			<div class="layer" data-depth="1.00"></div>
-			<div class="layer" data-depth="0.70">
-				<div id="result_layer1"></div>
-			</div>
-			<div class="layer" data-depth="0.60">
-				<div id="result_layer2"></div>
-			</div>
-			<div class="layer" data-depth="0.45">
-				<div id="result_layer3"></div>
-			</div>
-			<div class="layer" data-depth="0.40">
-				<div id="result_layer4"></div>
-			</div>
-			<div class="layer circle1" data-depth="0.35">
-				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="overflow: visible;"
-					viewBox="0 0 1080 1920">
-					<circle style="fill: #ffd880; opacity: 0.1;" cx="540" cy="2024" r="1428" />
-				</svg>
-			</div>
-			<div class="layer circle2" data-depth="0.30">
-				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="overflow: visible;"
-					viewBox="0 0 1080 1920">
-					<circle style="fill: #ffd880; opacity: 0.2;" cx="540" cy="2024" r="1381" />
-				</svg>
-			</div>
-			<div class="layer circle3" data-depth="0.25">
-				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="overflow: visible;"
-					viewBox="0 0 1080 1920">
-					<circle style="fill: #ffd880; opacity: 0.3;" cx="540" cy="2024" r="1327" />
-				</svg>
-			</div>
-			<div class="layer circle4" data-depth="0.20">
-				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="overflow: visible;"
-					viewBox="0 0 1080 1920">
-					<radialGradient id="circleGrad" cx="540" cy="2024" r="1428.09" gradientUnits="userSpaceOnUse">
-						<stop offset="0" stop-color="#ffc95c" />
-						<stop offset="1" stop-color="#ffd880" />
-					</radialGradient>
-					<circle style="fill: url(#circleGrad);" cx="540" cy="2024" r="1269" />
-				</svg>
-			</div>
-			<div class="layer container" data-depth="0.10">
-				<div class="content" id="resultBox">
-				</div>
-			</div>
-			<div class="layer form" data-depth="0.10">
-				<div id="result_form">
-					<a href="http://2020hr.ncuos.com/application/?from=hrtest" class="link joinus"></a>
-					<a href="javascript:;" onclick="javascript:location.reload();" class="link restart"></a>
-					<a href="javascript:share();" class="link share"></a>
-				</div>
-			</div>
-			<div class="share-mask">
-				<div id="result_share"></div>
-			</div>
-		</div>
-	</div>
+  <script src="resources/app.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "https://www.google-analytics.com/analytics.js",
+      "ga"
+    );
 
-	<script src="resources/app.js"></script>
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date(); a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-80324378-9', 'auto');
-		ga('send', 'pageview');
-
-	</script>
-
+    ga("create", "UA-80324378-9", "auto");
+    ga("send", "pageview");
+  </script>
 </body>
 
 </html>
