@@ -23,6 +23,5 @@ QuestionPage.prototype.enter = function () {
 };
 
 QuestionPage.prototype.result = function () {
-  console.log($(this.element).find('input[type="radio"]:checked').val());
   return $(this.element).find('input[type="radio"]:checked').val();
 };

@@ -30,10 +30,7 @@ AnimatePage.prototype.exit = function () {
 	this.trigger("exitStart");
 	this.element.classList.add("out");
 	this.element.classList.remove("in");
-
-	log(this.loop[1], this.anim.timeCompleted,this.anim);
 	this.anim.adjustSegment([this.loop[1], this.anim.timeCompleted]);
-
 	var that = this;
 	setTimeout(function () {
 		if (that.element.classList.contains("out")) {
@@ -45,7 +42,6 @@ AnimatePage.prototype.exit = function () {
 		if (that.anim.firstFrame >= that.loop[1]) { //处在结尾段
 			that.element.classList.remove("out");
 			that.trigger("exitEnd");
-
 			that.anim.removeEventListener("loopComplete");
 			//that.anim.goToAndStop([that.anim.timeCompleted, that.anim.timeCompleted], true);
 			setTimeout(function () { that.anim.destroy(); }, 500); //防止立即退出布局乱掉

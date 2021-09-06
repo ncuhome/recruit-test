@@ -60,7 +60,6 @@ analyzePage.addEventListener("enterEnd", function () {
 
   for (var i = 0, j = 0; i < dispatcher.pages.length; i++) {
     if (dispatcher.pages[i] instanceof QuestionPage) {
-      console.log(dispatcher);
       var result = dispatcher.pages[i].result().split(",");
       options[0] += parseInt(result[0]);
       options[1] += parseInt(result[1]);
@@ -72,7 +71,6 @@ analyzePage.addEventListener("enterEnd", function () {
     }
   }
 
-  log(options);
   text = "";
 
   for (var i = 0; i < options.length; i++) {
