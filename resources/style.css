@@ -31,7 +31,7 @@ body {
 }
 
 #app .page.in {
-	animation: in-end .1s linear .2s;
+	animation: in-end 0s linear .1s;
 }
 
 #app .page.out {
