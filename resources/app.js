@@ -70,18 +70,21 @@ analyzePage.addEventListener("enterEnd", function () {
       j++;
     }
   }
-
   text = "";
-
   for (var i = 0; i < options.length; i++) {
-    if (options[i] > 14) {
+    if (options[i] > 16) {
       $("#resultBox").append('<div class="item biger ' + keys[i] + '"></div>');
       text += titles[i] + "、";
-    } else if (options[i] <= 14 && options[i] > 12) {
+    } else if (options[i] <= 16 && options[i] > 13) {
       $("#resultBox").append('<div class="item big ' + keys[i] + '"></div>');
       text += titles[i] + "、";
-    } else if (options[i] <= 12 && options[i] > 10) {
+    } else if (options[i] <= 13 && options[i] > 10) {
       $("#resultBox").append('<div class="item small ' + keys[i] + '"></div>');
+      text += titles[i] + "、";
+    } else if (options[i] <= 10 && options[i] >= 8) {
+      $("#resultBox").append(
+        '<div class="item smaller ' + keys[i] + '"></div>'
+      );
       text += titles[i] + "、";
     }
   }

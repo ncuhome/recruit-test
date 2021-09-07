@@ -464,13 +464,13 @@ body {
 }
 
 #result .container .content .item.smaller {
-	width : 0.45rem;
-	height: 0.45rem;
+	width : 0.6rem;
+	height: 0.6rem;
 }
 
 #result .container .content .item.small {
-	width : 0.6rem;
-	height: 0.6rem;
+	width : 0.75rem;
+	height: 0.75rem;
 }
 
 #result .container .content .item.big {
