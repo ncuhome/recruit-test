@@ -8,12 +8,17 @@ document.body.addEventListener(
 
 var relayout = function () {
   var appElement = document.querySelector("#app");
-  if (document.documentElement.clientWidth > 0) {
+  var resultElement = document.querySelector("#resultBox");
+  if (document.documentElement.clientWidth >= 450) {
     var pageWidth = (appElement.offsetHeight / 1920) * 1080;
+    resultElement.style.width = pageWidth + "px";
     appElement.style.width = pageWidth + "px";
     document.documentElement.style.fontSize = (pageWidth / 414) * 100 + "px";
   } else {
     appElement.style.width = "100%";
+    resultElement.style.left = "0%";
+    resultElement.style.right = "0%";
+    resultElement.style.transform = "translateX(0)";
     document.documentElement.style.fontSize =
       (document.documentElement.clientWidth / 414) * 100 + "px";
   }

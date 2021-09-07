@@ -38,12 +38,9 @@ body {
 	animation: out-end .1s linear .2s;
 }
 
-#app .anim {
-	min-width : 100vw;
-	min-height: calc(100vw / 1080 * 1200);
-}
-
-.page,
+.page:nth-child(1),
+.page:nth-last-child(1),
+.page:nth-last-child(2),
 .page .layer {
 	position: absolute;
 	left    : 0;
@@ -353,11 +350,11 @@ body {
 }
 
 #analyze .stage {
-	position: absolute;
-	left    : 0;
-	right   : 0;
-	height  : 100%;
-	z-index : 0;
+	position : absolute;
+	left     : 50%;
+	transform: translateX(-50%);
+	height   : 100%;
+	z-index  : 0;
 }
 
 #analyze .stage .ball {
@@ -415,18 +412,20 @@ body {
 }
 
 #result .container .content {
-	position       : absolute;
-	top            : 45%;
-	left           : 0%;
-	right          : 0%;
-	width          : auto;
-	height         : auto;
-	display        : flex;
-	justify-content: center;
-	flex-flow      : row wrap;
-	align-items    : center;
-	font-size      : .25rem;
-	z-index        : 9;
+	position          : absolute;
+	top               : 45%;
+	left              : 50%;
+	transform         : translateX(-50%);
+	/* left           : 0%;
+	right             : 0%; */
+	width             : auto;
+	height            : auto;
+	display           : flex;
+	justify-content   : center;
+	flex-flow         : row wrap;
+	align-items       : center;
+	font-size         : .25rem;
+	z-index           : 9;
 }
 
 #result .container .content .item {
